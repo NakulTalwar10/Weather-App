@@ -1,0 +1,80 @@
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.temperature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.temperature-range {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin-top: 5px;
+}
+
+.temperature-range p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  
+}
+
+.condition {
+  margin-top: 10px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    max-width: 500px;
+  }
+
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .temperature {
+    font-size: 16px;
+  }
+
+  .temperature-range {
+    width: 100px;
+  }
+
+  .temperature-range p {
+    font-size: 12px;
+  }
+}

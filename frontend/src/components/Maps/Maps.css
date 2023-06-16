@@ -1,0 +1,19 @@
+.maps-container {
+    width: 100%;
+  }
+  
+  .maps-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .maps-map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

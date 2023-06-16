@@ -1,0 +1,45 @@
+.celsius {
+
+    padding: 10px;
+    height: 15vh;
+  }
+  
+  .mx-10 {
+    margin: 0 10px;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  @media (max-width: 768px) {
+    .celsius {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .mx-10 {
+      margin: 10px;
+    }
+  
+    .text-2xl {
+      font-size: 1.25rem;
+    }
+  
+    .text-xl {
+      font-size: 1rem;
+    }
+  }
+  

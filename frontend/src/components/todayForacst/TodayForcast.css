@@ -1,0 +1,38 @@
+.today {
+  padding: 10px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .today {
+    height: 100%;
+    width: 100%;
+  }
+
+  .weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}

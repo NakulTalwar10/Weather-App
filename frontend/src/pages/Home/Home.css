@@ -1,0 +1,144 @@
+/* card */
+
+.card {
+    box-sizing: border-box;
+    width: 120vh;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 12px 17px 51px rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-weight: bolder;
+  }
+  
+  .card:hover {
+    border: 1px solid rgb(214, 214, 214);
+ 
+  }
+  
+
+
+
+  /* Search */
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+  }
+
+/* home-conatiners */
+  .containers{
+
+    height: 65vh;
+    width: 100vh;
+    }
+  
+    /* currentDate */
+
+    .currentDate{
+      color: white;
+    }
+
+    .btn {
+      height: 40px;
+      margin: 5px;
+      width: 120px;
+      background: #333;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: Consolas, Courier New, monospace;
+      border: solid #404C5D 1px;
+      font-size: 10px;
+      color: rgb(161, 161, 161);
+      -webkit-transition: 500ms;
+      transition: 500ms;
+      border-radius: 5px;
+      background: linear-gradient(145deg, #2e2d2d, #212121);
+      -webkit-box-shadow: -1px -5px 15px #41465B,
+          5px 5px 15px #41465B,
+          inset 5px 5px 10px #212121,
+          inset -5px -5px 10px #212121;
+      box-shadow: -1px -5px 15px #41465B,
+          5px 5px 15px #41465B,
+          inset 5px 5px 10px #212121,
+          inset -5px -5px 10px #212121;
+  }
+  
+  .btn:hover {
+      -webkit-box-shadow: 1px 1px 13px #20232e,
+          -1px -1px 13px #545b78;
+      box-shadow: 1px 1px 13px #20232e,
+          -1px -1px 13px #545b78;
+      color: #d6d6d6;
+      -webkit-transition: 500ms;
+      transition: 500ms;
+  }
+  
+  .btn:active {
+      -webkit-box-shadow: 1px 1px 13px #20232e,
+          -1px -1px 33px #545b78;
+      box-shadow: 1px 1px 13px #20232e,
+          -1px -1px 33px #545b78;
+      color: #d6d6d6;
+      -webkit-transition: 100ms;
+      transition: 100ms;
+  }
