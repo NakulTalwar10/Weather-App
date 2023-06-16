@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const getWeather = createAsyncThunk("weather/getWeather", async (city) => {
-  const response = await fetch(`http://localhost:9000/${city}`);
+  const response = await fetch(`https://weather-backend-efom.onrender.com/${city}`);
   const result = await response.json();
   return result;
 });
