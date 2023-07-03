@@ -71,17 +71,17 @@ const Home = () => {
           <div className='mb-4'>
             <WeeklyForcast />
           </div>
-          <div className='mb-4'>
-            {weatherData?.latitude && weatherData?.longitude ? (
-              <Maps
-                city={weatherData.city}
-                temperature={weatherData.temperature}
-                latitude={weatherData.latitude}
-                longitude={weatherData.longitude}
-              />
-            ) : (
-              <p className='text-white font-bold'>Loading map...</p>
-            )}
+          <div className='mb-4 container'>
+          {weatherData?.latitude && weatherData?.longitude ? (
+            <Maps
+              city={weatherData.city}
+              temperature={weatherData.temperature}
+              latitude={weatherData.latitude}
+              longitude={weatherData.longitude}
+            />
+          ) : (
+            <p className='text-white font-bold'>Loading map...</p>
+          )}
           </div>
         </div>
       </div>
