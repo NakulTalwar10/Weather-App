@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './Celsius.css';
+import Loader from '../../Loaders/Loader';
 
 const Celsius = () => {
   const weatherData = useSelector((state) => state.weather.data);
+  const isLoading = useSelector((state) => state.weather.isLoading);
   console.log('weatherData:', weatherData);
 
   const temperature = weatherData ? weatherData.temperature : null;
@@ -12,6 +14,10 @@ const Celsius = () => {
   const convertToFahrenheit = (celsius) => (celsius * 9) / 5 + 32;
   const fahrenheit = convertToFahrenheit(temperature);
 
+  if (isLoading || !weatherData) {
+    // Render the loader or any other loading indicator
+    return <Loader/>;
+  }
   return (
     <div className='celsius flex justify-center'>
       <div className='mx-4 sm:mx-10'>

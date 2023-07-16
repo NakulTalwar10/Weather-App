@@ -2,14 +2,22 @@ import React, { useEffect } from 'react';
 import './TodayForcast.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getWeather } from '../../slices/weatherSlice';
+import Loader from '../../Loaders/Loader';
 
 const TodayForecast = () => {
   const weatherData = useSelector((state) => state.weather.data);
+  const isLoading = useSelector((state) => state.weather.isLoading);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getWeather('Delhi')); // Replace 'Delhi' with the desired city value
   }, [dispatch]);
+
+  if (isLoading || !weatherData) {
+    // Render the loader or any other loading indicator
+    return <Loader/>;
+  }
 
   return (
     <div className="today py-6 sm:py-10 flex flex-col items-center">
